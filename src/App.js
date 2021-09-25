@@ -34,11 +34,10 @@ class App extends Component {
     })
   }
 
-  render() {
-    console.log(this.state.carro)
+  render() {    
     return(      
       <div>
-        <Navbar />
+        <Navbar carro={this.state.carro} />
         <Layout>
           <Title />
           <Productos 
