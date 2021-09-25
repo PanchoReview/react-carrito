@@ -2,6 +2,7 @@ import { Component } from 'react';
 import Productos from "./components/Productos"
 import Layout from './components/Layout'
 import Title from './components/Title'
+import Navbar from './components/Navbar'
 
 class App extends Component {
   state = {
@@ -11,9 +12,11 @@ class App extends Component {
       { name: 'Lechuga', price: 500, img: '/productos/lechuga.jpg'},
     ]
   }
+  
   render() {
     return(
       <div>
+        <Navbar />
         <Layout>
           <Title />
           <Productos 
